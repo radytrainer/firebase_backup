@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffees</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+</head>
+<body>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA__6AF3bgMVuO-5j_F19ezLOs-VlDBdmA",
+    authDomain: "coffee-cae1c.firebaseapp.com",
+    databaseURL: "https://coffee-cae1c.firebaseio.com",
+    projectId: "coffee-cae1c",
+    storageBucket: "coffee-cae1c.appspot.com",
+    messagingSenderId: "33419464451",
+    appId: "1:33419464451:web:512bb5c16a531c594d6336",
+    measurementId: "G-0FYCH8B40G"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var database = firebase.firestore();
+</script>
+    <script src="js/coffee.js"></script>
+</body>
+</html>

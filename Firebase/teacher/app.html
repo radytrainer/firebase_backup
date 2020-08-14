@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6" id="result">
+                
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBm3Y5lXQrjZeFivcux1KwIeuDm9pEhPGA",
+            authDomain: "teacher-b34af.firebaseapp.com",
+            databaseURL: "https://teacher-b34af.firebaseio.com",
+            projectId: "teacher-b34af",
+            storageBucket: "teacher-b34af.appspot.com",
+            messagingSenderId: "678096491215",
+            appId: "1:678096491215:web:7b75cbe094dc1df2761dba",
+            measurementId: "G-L0KMY4240B"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        var database = firebase.firestore();
+    </script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>
